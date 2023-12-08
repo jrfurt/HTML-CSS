@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
 * {
     margin: 0;
@@ -7,31 +7,46 @@
 
 
 body {
+    background-color: antiquewhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 0px rgb(104, 104, 104);
     padding: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
 }
 
 a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+article {
+    max-width: 768px;
+    margin: auto;
 }
 
 div {
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.486);
-    padding: 30px;     
+    padding: 5vh;  
 }
 
 div p {
     font-family: 'Love Ya Like A Sister', cursive;
-    /* font-family: 'Satisfy', cursive; */
     font-size: 1.3em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.164);
     white-space: pre-line;
@@ -41,28 +56,31 @@ div p {
 }
 
 .textimg {
-    /* background-color: rgba(0, 0, 0, 0.364); */
     color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .img2 {
     background-color: darkolivegreen;
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;
-    background-position: right;
+    background-position: center top;
     background-size: cover;
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.599);
 }
 
 .img4 {
     background-color: darkolivegreen;
     background-image: url(imagens/background002.jpg);
     background-attachment: fixed;
-    background-position: right;
+    background-position: center top;
     background-size: cover;
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.599);
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 5px;
 }
